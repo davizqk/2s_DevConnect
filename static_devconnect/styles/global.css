@@ -1,0 +1,57 @@
+:root {
+    --cor-preto: #000000;
+    --cor-vermelho: #FF0000;
+    --cor-vermelho-escuro: #750000;
+    --cor-vermelho-claro: #D96950;
+    --cor-rosa-claro: #FFDDD3;
+    --cor-branco: #FFFFFF;
+
+    --borda: 2px solid var(--cor-vermelho);
+    --borda-arredondada: 10px;
+
+    --tamanho-fonte-lg: 80px;
+    --tamanho-fonte-md: 30px;
+    --tamanho-fonte-sm: 18px;
+}
+
+@font-face {
+    font-family: Cookie;
+    src: url(../fonts/Cookie/Cookie-Regular.ttf);
+}
+
+@font-face {
+    font-family: EB_Garamond;
+    src: url(../fonts/EB_Garamond/static/EBGaramond-Bold.ttf), url(../fonts/EB_Garamond/static/EBGaramond-BoldItalic.ttf), url(../fonts/EB_Garamond/static/EBGaramond-ExtraBold.ttf), url(../fonts/EB_Garamond/static/EBGaramond-ExtraBoldItalic.ttf), url(../fonts/EB_Garamond/static/EBGaramond-Italic.ttf), url(../fonts/EB_Garamond/static/EBGaramond-Medium.ttf), url(../fonts/EB_Garamond/static/EBGaramond-MediumItalic.ttf), url(../fonts/EB_Garamond/static/EBGaramond-Regular.ttf), url(../fonts/EB_Garamond/static/EBGaramond-SemiBold.ttf), url(../fonts/EB_Garamond/static/EBGaramond-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald/static/Oswald-Bold.ttf), url(../fonts/Oswald/static/Oswald-ExtraLight.ttf), url(../fonts/Oswald/static/Oswald-Light.ttf), url(../fonts/Oswald/static/Oswald-Medium.ttf), url(../fonts/Oswald/static/Oswald-Regular.ttf), url(../fonts/Oswald/static/Oswald-SemiBold.ttf);
+}
+
+/*SELETOR GLOBAL*/
+* {
+    font-family: "EB_Garamond", serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* o valor total do tamanho do elemento conta tanto com espaços interno/externo e as bordas */
+}
+
+body {
+    background-color: var(--cor-rosa-claro);
+}
+
+h1 {
+    position: absolute;/*altera a posição do elemento*/
+    z-index: -1;/**/
+    opacity: 0;/**/
+}
+
+/**********formulario**********/
+input{
+    width: 80%;
+    height: 35px;
+    border: var(--borda);
+    background-color: var(--cor-vermelho-escuro);
+}
