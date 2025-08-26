@@ -1,0 +1,78 @@
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFDDD3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div{
+    background-color: #FFDDD3;
+    width: 100%; 
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/***************FORMULÁRIO***************/
+
+#formulario {
+    background-color: #D96950;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    gap: 15px;
+}
+
+#formulario>div {
+    width: 100%;
+}
+
+.estilo-formulario {
+    width: 100%;
+    max-width: 420px;
+    border: var(--borda);
+    background-color: var(--cor-branco);
+}
+
+#secao-login {
+    height: 60px;
+    background-color: #D96950;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario>a, #secao-login>p>a {
+    text-decoration: none;
+    color: var(--cor-vermelho);
+}
+
+.formulario-botao-vermelho {
+    width: 100%;
+    cursor: pointer;
+}
+
+.texto-centralizado {
+    text-align: center; /* Centraliza o texto */
+  }
+
+.informacao {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+}
+
+.file-upload {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    padding: 6px 12px;   /* deixei menor */
+    background-color: var(--cor-vermelho-escuro); /* cinza do botão */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}

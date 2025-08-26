@@ -11,7 +11,7 @@
 
     --tamanho-fonte-lg: 80px;
     --tamanho-fonte-md: 30px;
-    --tamanho-fonte-sm: 18px;
+    --tamanho-fonte-sm: 16px;
 }
 
 @font-face {
@@ -48,10 +48,20 @@ h1 {
     opacity: 0;/**/
 }
 
-/**********formulario**********/
+/**********FORMULARIO**********/
 input{
-    width: 80%;
+    width: 100%;
     height: 35px;
     border: var(--borda);
+    background-color: var(--cor-rosa-claro);
+}
+
+.formulario-botao-vermelho{
     background-color: var(--cor-vermelho-escuro);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+
+    color: var(--cor-branco);
+    font-size: var(--tamanho-fonte-sm);
 }
