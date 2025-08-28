@@ -1,0 +1,89 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFDDD3;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container-flex-publi{
+    max-width: 900px;
+    width: 70%;
+    height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#secao-storys {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow-x: scroll;
+    padding: 10px;
+}
+
+#secao-storys::-webkit-scrollbar{
+    width: 0;
+}
+
+.card-story {
+    /* width: 100%;
+    max-width: 150px; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-story>a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-story>a>p {
+    color: #000000;
+    font-size: var(--tamanho-fonte-sm);
+    text-transform: lowercase;
+}
+
+
+/**********SEÇÃO CRIAR PUBLI    **********/
+#secao-publicacao {
+    width: 100%;
+    max-width: 700px;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 3px solid #FF0000;
+    padding: 10px;
+    gap: 10px;
+}
+
+#secao-publicacao>h2 {
+    font-size: var(--tamanho-fonte-md);
+    color: var(--cor-preto);
+    font-weight: 800;
+}
+
+#secao-publicacao>form {
+    background-color: aqua;
+}
+
+#secao-publicacao>form>textarea {
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF;
+    resize: none;
+}

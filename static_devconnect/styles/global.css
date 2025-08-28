@@ -20,7 +20,7 @@
 }
 
 @font-face {
-    font-family: EB_Garamond;
+    font-family: "EB_Garamond";
     src: url(../fonts/EB_Garamond/static/EBGaramond-Bold.ttf), url(../fonts/EB_Garamond/static/EBGaramond-BoldItalic.ttf), url(../fonts/EB_Garamond/static/EBGaramond-ExtraBold.ttf), url(../fonts/EB_Garamond/static/EBGaramond-ExtraBoldItalic.ttf), url(../fonts/EB_Garamond/static/EBGaramond-Italic.ttf), url(../fonts/EB_Garamond/static/EBGaramond-Medium.ttf), url(../fonts/EB_Garamond/static/EBGaramond-MediumItalic.ttf), url(../fonts/EB_Garamond/static/EBGaramond-Regular.ttf), url(../fonts/EB_Garamond/static/EBGaramond-SemiBold.ttf), url(../fonts/EB_Garamond/static/EBGaramond-SemiBoldItalic.ttf);
 }
 
@@ -31,7 +31,7 @@
 
 /*SELETOR GLOBAL*/
 * {
-    font-family: "EB_Garamond", serif;
+    font-family: "Oswald";
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -49,14 +49,15 @@ h1 {
 }
 
 /**********FORMULARIO**********/
-input{
+
+input {
     width: 100%;
     height: 35px;
     border: var(--borda);
-    background-color: var(--cor-rosa-claro);
+    background-color: var(--cor-branco);
 }
 
-.formulario-botao-vermelho{
+.formulario-botao-vermelho {
     background-color: var(--cor-vermelho-escuro);
     border-radius: var(--borda-arredondada);
     border: none;
@@ -65,3 +66,91 @@ input{
     color: var(--cor-branco);
     font-size: var(--tamanho-fonte-sm);
 }
+
+.formulario-botao-postar {
+    background-color: var(--cor-vermelho);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+
+    color: var(--cor-branco);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+.file-upload {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    padding: 6px 12px;   /* deixei menor */
+    background-color: var(--cor-vermelho-escuro); /* cinza do botão */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/***************CABEÇALHO***************/
+#cabecalho {
+    width: 100%; /*100% da janela de visualização*/
+    height: 65px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border-bottom: 3px solid #FF0000;
+}
+
+#cabecalho>nav {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+#logo-mobile {
+    display: none;
+}
+
+.acoes-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.acoes-cabecalho>a {
+    display: flex;
+    align-items: center;
+}
+
+#foto-perfil {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;/*redimensiona a foto*/
+    object-position: center;
+    border-radius: 50%;
+}
+
+.foto-story {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;/*redimensiona a foto*/
+    object-position: center;
+    border-radius: 50%;
+    display: flex;
+}
+
+
+
+@media only screen and (max-width: 485px) {
+    #logo-mobile{
+        display: block;
+    }
+
+    #logo-desktop{
+        display: none;
+    }
+}
+
