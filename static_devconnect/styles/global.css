@@ -5,13 +5,15 @@
     --cor-vermelho-claro: #D96950;
     --cor-rosa-claro: #FFDDD3;
     --cor-branco: #FFFFFF;
+    --cor-cinza: rgb(204, 204, 204);
 
     --borda: 2px solid var(--cor-vermelho);
+    --borda-2: 2px solid var(--cor-cinza);
     --borda-arredondada: 10px;
 
     --tamanho-fonte-lg: 80px;
-    --tamanho-fonte-md: 30px;
-    --tamanho-fonte-sm: 16px;
+    --tamanho-fonte-md: 25px;
+    --tamanho-fonte-sm: 15px;
 }
 
 @font-face {
@@ -36,6 +38,7 @@
     margin: 0;
     box-sizing: border-box;
     /* o valor total do tamanho do elemento conta tanto com espaços interno/externo e as bordas */
+    outline-color: var(--cor-vermelho-escuro);
 }
 
 body {
@@ -71,7 +74,7 @@ input {
     background-color: var(--cor-vermelho);
     border-radius: var(--borda-arredondada);
     border: none;
-    height: 35px;
+    height: 40px;
 
     color: var(--cor-branco);
     font-size: var(--tamanho-fonte-sm);
@@ -79,8 +82,7 @@ input {
 
 .file-upload {
     display: inline-block;
-    width: 100%;
-    height: 35px;
+    min-height: 40px;
     text-align: center;
     padding: 6px 12px;   /* deixei menor */
     background-color: var(--cor-vermelho-escuro); /* cinza do botão */
@@ -120,12 +122,13 @@ input {
     align-items: center;
     gap: 10px;
 }
+
 .acoes-cabecalho>a {
     display: flex;
     align-items: center;
 }
 
-#foto-perfil {
+.foto-perfil {
     width: 50px;
     height: 50px;
     object-fit: cover;/*redimensiona a foto*/
