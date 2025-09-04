@@ -1,0 +1,66 @@
+main {
+    /* background-color: aqua; */
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-flex-perfil {
+    /* background-color: brown; */
+    width: 100%;
+    max-width: 900px;
+    height: 800px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#secao-perfil {
+    background-color: blue;
+    width: 100%;
+    max-width: 750px;
+    height: 250px;
+    padding: 20px;
+    border-bottom: var(--borda);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#informacoes-perfil {
+    background-color: aqua;
+    width: 415px;
+    height: 200px;
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#informacoes-perfil>span {
+    width: 100%;
+}
+
+#informacoes-perfil>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+} 
+
+#secao-publicacoes-perfil {
+
+}
+
+@media only screen and (max-width: 480px) {
+    #informacoes-perfil, #secao-perfil{
+        flex-direction: column;
+        align-items: center;
+    }
+}

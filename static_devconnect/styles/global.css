@@ -7,7 +7,7 @@
     --cor-branco: #FFFFFF;
     --cor-cinza: rgb(204, 204, 204);
 
-    --borda: 2px solid var(--cor-vermelho);
+    --borda: 3px solid var(--cor-vermelho);
     --borda-2: 2px solid var(--cor-cinza);
     --borda-arredondada: 10px;
 
@@ -145,7 +145,13 @@ input {
     display: flex;
 }
 
-
+.foto-tela-perfil {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;/*redimensiona a foto*/
+    object-position: center;
+    border-radius: 50%;
+}
 
 @media only screen and (max-width: 485px) {
     #logo-mobile{
