@@ -20,10 +20,10 @@ main {
 }
 
 #secao-perfil {
-    background-color: blue;
+    /* background-color: blue; */
     width: 100%;
-    max-width: 750px;
-    height: 250px;
+    /* max-width: 750px; */
+    /* min-height: 165px; */
     padding: 20px;
     border-bottom: var(--borda);
     display: flex;
@@ -32,9 +32,10 @@ main {
 }
 
 #informacoes-perfil {
-    background-color: aqua;
-    width: 415px;
-    height: 200px;
+    /* background-color: aqua; */
+    width: 100%;
+    max-width: 415px;
+    /* height: 200px; */
     display: flex;
     /* justify-content: flex-start; */
     align-items: center;
@@ -52,14 +53,67 @@ main {
     align-items: center;
     gap: 15px;
     margin-right: 20px;
-} 
+}
 
-#secao-publicacoes-perfil {
+#informacoes-perfil>p>span {
+    color: var(--cor-vermelho);
+}
 
+.card{
+    /* height: 40px; */
+    /* width: 200px; */
+    /* background-color: blueviolet; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-bottom: 30px; */
+}
+
+#publicacoes-perfil {
+    background-color: var(--cor-branco);
+    width: 100%;
+    max-width: 450px;
+    /* height: 250px; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#publicacoes-perfil>header>a {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--cor-preto);
+    font-weight: 700;
+    padding: 5px;
+}
+
+.card-notas {
+    background-color: var(--cor-rosa-claro);
+    width: 100%;
+    max-width: 400px;
+    /* height: 150px; */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.editar-02, .sair-02 {
+    text-decoration: none;
+    color: var(--cor-vermelho);
 }
 
 @media only screen and (max-width: 480px) {
-    #informacoes-perfil, #secao-perfil{
+
+    #informacoes-perfil,
+    #secao-perfil {
         flex-direction: column;
         align-items: center;
     }

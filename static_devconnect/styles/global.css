@@ -98,7 +98,7 @@ input {
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     border-bottom: 3px solid #FF0000;
 }
 
