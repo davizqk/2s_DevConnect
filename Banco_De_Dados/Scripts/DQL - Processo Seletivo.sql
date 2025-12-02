@@ -57,16 +57,16 @@ LEFT JOIN tb_comentario C ON U.id_usuario = C.id_usuario
 WHERE C.id_comentario IS NULL;
 
 
+
+
 --VIEW
-CREATE VIEW vw_usuario_publicacoes AS
+CREATE VIEW vw_usuario_publicacoesss AS
 SELECT
     U.nome_usuario,
     P.descricao,
     P.imagem_url,
     P.data_publicacao
-FROM
-    tb_usuario U
-JOIN
-    tb_publicacao P ON U.id_usuario = P.id_usuario;
+FROM tb_usuario U
+JOIN tb_publicacao P ON U.id_usuario = P.id_usuario;
 
-	SELECT * FROM vw_usuario_publicacoes
+SELECT * FROM vw_usuario_publicacoesss;

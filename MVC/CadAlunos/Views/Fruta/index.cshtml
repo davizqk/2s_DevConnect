@@ -1,0 +1,14 @@
+@model List<CadAlunos.Models.Fruta>
+
+<h1>Pagina de Frutas</h1>
+
+<h2>Lista de Frutas</h2>
+
+@foreach( var fruta in Model ){
+    <p>
+        id: @fruta.Id,
+        Nome: @fruta.Nome,
+        Cor: @fruta.Cor,
+        Categoria: @fruta.Categoria,
+    </p>
+}

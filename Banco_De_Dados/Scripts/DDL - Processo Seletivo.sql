@@ -1,4 +1,5 @@
 --DDL
+
 CREATE DATABASE db_devconnect_;
 
 --comando usado para usar o BD
