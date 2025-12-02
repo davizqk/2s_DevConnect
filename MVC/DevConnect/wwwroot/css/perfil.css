@@ -1,0 +1,120 @@
+main {
+    /* background-color: aqua; */
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-flex-perfil {
+    /* background-color: brown; */
+    width: 100%;
+    max-width: 900px;
+    height: 800px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#secao-perfil {
+    /* background-color: blue; */
+    width: 100%;
+    /* max-width: 750px; */
+    /* min-height: 165px; */
+    padding: 20px;
+    border-bottom: var(--borda);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#informacoes-perfil {
+    /* background-color: aqua; */
+    width: 100%;
+    max-width: 415px;
+    /* height: 200px; */
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#informacoes-perfil>span {
+    width: 100%;
+}
+
+#informacoes-perfil>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+#informacoes-perfil>p>span {
+    color: var(--cor-vermelho);
+}
+
+.card{
+    /* height: 40px; */
+    /* width: 200px; */
+    /* background-color: blueviolet; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-bottom: 30px; */
+}
+
+#publicacoes-perfil {
+    background-color: var(--cor-branco);
+    width: 100%;
+    max-width: 450px;
+    /* height: 250px; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#publicacoes-perfil>header>a {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--cor-preto);
+    font-weight: 700;
+    padding: 5px;
+}
+
+.card-notas {
+    background-color: var(--cor-rosa-claro);
+    width: 100%;
+    max-width: 400px;
+    /* height: 150px; */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.editar-02, .sair-02 {
+    text-decoration: none;
+    color: var(--cor-vermelho);
+}
+
+@media only screen and (max-width: 480px) {
+
+    #informacoes-perfil,
+    #secao-perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+}

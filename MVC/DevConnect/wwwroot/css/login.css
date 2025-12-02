@@ -1,0 +1,93 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+    /*Altura da janela do meu dispositivo*/
+    background-color: #FFDDD3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div {
+    background-color: #FFDDD3;
+    width: 90%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/****************FORMULÁRIO****************/
+
+#formulario {
+    background-color: #D96950;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    gap: 15px;
+}
+
+.estilo-formulario {
+    border: var(--borda);
+    width: 100%;
+    max-width: 350px;
+    background-color: var(--cor-branca);
+}
+
+#secao-cadastro {
+    height: 60px;
+    background-color: #D96950;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario>div {
+    width: 100%;
+}
+
+#formulario>p {
+    text-transform: uppercase;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-branco);
+}
+
+#formulario>a, #secao-cadastro>p>a {
+    text-decoration: none;
+    color: var(--cor-vermelho);
+}
+
+#secao-cadastro>p {
+    font-size: var(--tamanho-fonte-sm);
+}
+
+#formulario>div>label {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.formulario-botao-vermelho {
+    width: 100%;
+}
+
+.informacao-aplicativo {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+    font-weight: 400;
+}
+
+#secao-instalacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /*espaços em linhas e colunas*/
+}
+
+#secao-instalacao img {
+    width: 120px;
+    height: 39px;
+}

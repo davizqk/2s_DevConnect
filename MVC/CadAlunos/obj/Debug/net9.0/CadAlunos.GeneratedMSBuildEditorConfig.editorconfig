@@ -9,61 +9,73 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CadAlunos
 build_property.RootNamespace = CadAlunos
-build_property.ProjectDir = C:\Users\54470890855\Desktop\BackEnd\MVC\CadAlunos\
+build_property.ProjectDir = C:\Users\54470890855\Desktop\2s_DevConnect\MVC\CadAlunos\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\54470890855\Desktop\BackEnd\MVC\CadAlunos
+build_property.MSBuildProjectDirectory = C:\Users\54470890855\Desktop\2s_DevConnect\MVC\CadAlunos
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/54470890855/Desktop/BackEnd/MVC/CadAlunos/Views/Fruta/Create.cshtml]
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Aluno/Aluno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cQWx1bm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Aluno/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Aluno/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9caW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Fruta/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJ1dGFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/54470890855/Desktop/BackEnd/MVC/CadAlunos/Views/Fruta/FrutaCitrica.cshtml]
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Fruta/FrutaCitrica.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJ1dGFcRnJ1dGFDaXRyaWNhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/54470890855/Desktop/BackEnd/MVC/CadAlunos/Views/Fruta/FrutaTropical.cshtml]
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Fruta/FrutaTropical.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJ1dGFcRnJ1dGFUcm9waWNhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/54470890855/Desktop/BackEnd/MVC/CadAlunos/Views/Fruta/index.cshtml]
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Fruta/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJ1dGFcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/54470890855/Desktop/BackEnd/MVC/CadAlunos/Views/Home/Index.cshtml]
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/54470890855/Desktop/BackEnd/MVC/CadAlunos/Views/Home/Privacy.cshtml]
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/54470890855/Desktop/BackEnd/MVC/CadAlunos/Views/Home/QuemSomos.cshtml]
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Home/QuemSomos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxRdWVtU29tb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/54470890855/Desktop/BackEnd/MVC/CadAlunos/Views/Shared/Error.cshtml]
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/54470890855/Desktop/BackEnd/MVC/CadAlunos/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/54470890855/Desktop/BackEnd/MVC/CadAlunos/Views/_ViewImports.cshtml]
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/54470890855/Desktop/BackEnd/MVC/CadAlunos/Views/_ViewStart.cshtml]
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/54470890855/Desktop/BackEnd/MVC/CadAlunos/Views/Shared/_Layout.cshtml]
+[C:/Users/54470890855/Desktop/2s_DevConnect/MVC/CadAlunos/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-gh0kp8fftx
