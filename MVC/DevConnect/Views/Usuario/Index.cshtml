@@ -1,0 +1,65 @@
+@using DevConnect.Contexts
+@{
+    ViewData["Title"] = "DevConnect - cadastro";
+}
+
+@model DevConnect.Models.TbUsuario
+
+<link rel="stylesheet" href="../css/cadastro.css">
+<link rel="stylesheet" href="../css/global.css">
+
+<script defer>
+    const usuarioNovoCadastrado = "@ViewBag.UsuarioNovoCadastrado";
+
+    if(usuarioNovoCadastrado == "Não cadastrado"){
+        alert("Usuário não cadastrado! Tente novamente😔")
+    }
+</script>
+<body>
+    <h1>Tela de Cadastro</h1>
+    <main>
+        <div>
+            
+            <!-- formulário -->
+            <form id="formulario" class="estilo-formulario" enctype="multipart/form-data" asp-controller="Usuario" asp-action="Index">
+                <img src="../images/logo-devconnect-cad.svg" alt="Logo da DevConnect">
+                <p class="texto-centralizado"> Cadastre-se para comunidade exclusiva de desenvolvedores(as)</p>
+                <div>
+                    <label for="usuario">Nome e Sobrenome</label>
+                    <input type="text" asp-for="NomeCompleto">
+                </div>
+                <div>
+                    <label for="usuario">Nome de Usuário</label>
+                    <input type="text" asp-for="NomeUsuario">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" asp-for="Email">
+                </div>
+                <div>
+                    <label for="senha">Sua Senha</label>
+                    <input type="password" asp-for="Senha">
+                </div>
+                <div>
+                    <label for="upload" class="file-upload" style="color: #FFFFFF;">Faça upload da sua imagem aqui</label>
+                    <input type="file" id="upload" name="imagem">
+                </div>
+
+                <button type="submit" class="formulario-botao-vermelho" >Cadastre-se</button>
+
+                <section id="informação">
+                    <p class="texto-centralizado">Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de Cookies.</p>
+                </section>
+                <!-- seção login -->
+                <section id="secao-login">
+                    <p>Já tem uma conta? 
+                        <a asp-controller="Home" asp-action="Index" >Conecte-se</a>
+                    </p>
+                </section>
+            </form>
+
+
+        </div>
+    </main>
+
+</body>

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\DevConnect.8jlx483ao7.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\54470890855\\Desktop\\2s_DevConnect\\MVC\\DevConnect\\wwwroot\\css\\cadastro.css",
+      "PackagePath": "staticwebassets\\css\\cadastro.css"
+    },
+    {
       "Id": "C:\\Users\\54470890855\\Desktop\\2s_DevConnect\\MVC\\DevConnect\\wwwroot\\css\\feed.css",
       "PackagePath": "staticwebassets\\css\\feed.css"
     },
@@ -31,6 +35,14 @@
     {
       "Id": "C:\\Users\\54470890855\\Desktop\\2s_DevConnect\\MVC\\DevConnect\\wwwroot\\images\\IMG_0481.JPG",
       "PackagePath": "staticwebassets\\images\\IMG_0481.JPG"
+    },
+    {
+      "Id": "C:\\Users\\54470890855\\Desktop\\2s_DevConnect\\MVC\\DevConnect\\wwwroot\\images\\RobloxScreenShot20250408_110645928.png",
+      "PackagePath": "staticwebassets\\images\\RobloxScreenShot20250408_110645928.png"
+    },
+    {
+      "Id": "C:\\Users\\54470890855\\Desktop\\2s_DevConnect\\MVC\\DevConnect\\wwwroot\\images\\RobloxScreenShot20250408_110650880.png",
+      "PackagePath": "staticwebassets\\images\\RobloxScreenShot20250408_110650880.png"
     },
     {
       "Id": "C:\\Users\\54470890855\\Desktop\\2s_DevConnect\\MVC\\DevConnect\\wwwroot\\images\\app-store.svg",
@@ -121,8 +133,24 @@
       "PackagePath": "staticwebassets\\images\\logo-devconnect-sm.svg"
     },
     {
+      "Id": "C:\\Users\\54470890855\\Desktop\\2s_DevConnect\\MVC\\DevConnect\\wwwroot\\images\\messi and neymar 2.jpg",
+      "PackagePath": "staticwebassets\\images\\messi and neymar 2.jpg"
+    },
+    {
       "Id": "C:\\Users\\54470890855\\Desktop\\2s_DevConnect\\MVC\\DevConnect\\wwwroot\\images\\messi.jpg",
       "PackagePath": "staticwebassets\\images\\messi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\54470890855\\Desktop\\2s_DevConnect\\MVC\\DevConnect\\wwwroot\\images\\neo quimica.jpg",
+      "PackagePath": "staticwebassets\\images\\neo quimica.jpg"
+    },
+    {
+      "Id": "C:\\Users\\54470890855\\Desktop\\2s_DevConnect\\MVC\\DevConnect\\wwwroot\\images\\nobras fluxo.jpg",
+      "PackagePath": "staticwebassets\\images\\nobras fluxo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\54470890855\\Desktop\\2s_DevConnect\\MVC\\DevConnect\\wwwroot\\images\\nobru saliente.jpg",
+      "PackagePath": "staticwebassets\\images\\nobru saliente.jpg"
     },
     {
       "Id": "C:\\Users\\54470890855\\Desktop\\2s_DevConnect\\MVC\\DevConnect\\wwwroot\\images\\post-gabigordo.svg",
