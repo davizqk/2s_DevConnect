@@ -240,7 +240,6 @@ C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\scope
 C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\scopedcss\projectbundle\DevConnect.bundle.scp.css
 C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\i0qwtwsqw9-kjpoiqe51s.gz
 C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\vlinrkfmos-2n2wupf1z9.gz
-C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\b2vcruk2pz-g276ienr45.gz
 C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\0kxwy11tb8-6zqqs8l69q.gz
 C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\rraduc47yt-4oqt9g5gor.gz
 C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\o5a95paigl-b9sayid5wm.gz
@@ -342,3 +341,4 @@ C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\refin
 C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\DevConnect.pdb
 C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\DevConnect.genruntimeconfig.cache
 C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\ref\DevConnect.dll
+C:\Users\54470890855\Desktop\2s_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\b2vcruk2pz-3gch7ib63v.gz

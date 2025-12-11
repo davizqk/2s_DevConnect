@@ -1,8 +1,24 @@
+@using Microsoft.IdentityModel.Tokens
+
 @{
     ViewData["Title"] = "DevConnect - feed";
 }
+
+@model List<DevConnect.Models.TbPublicacao>
+
 <link rel="stylesheet" href="../css/feed.css">
 <link rel="stylesheet" href="../css/global.css">
+
+<script defer>
+    const publicacaoNovaCadastrada = "@ViewBag.PublicacaoNovaCadastrada";
+
+    if(publicacaoNovaCadastrada == "Não cadastrado"){
+        alert("Usuário não cadastrado! Tente novamente😔");
+    } else if(publicacaoNovaCadastrada == "Cadastrada"){
+        alert("Muito bem! Sua nova publicação foi postada");
+    }
+</script>
+
 <body>
     <h1>Tela Feed - DevConnect</h1>
     <!-- header -->
@@ -158,15 +174,16 @@
             <!-- Inicio seção story -->
             <section id="secao-publicacao">
                 <h2>Publicação</h2>
-                <form action="">
-                    <textarea name="" id="" placeholder="Digite a descrição do post..."></textarea>
+                <form enctype="multipart/form-data" asp-controller="Feed" asp-action="Index">
+                    <textarea name="Descricao" placeholder="Digite a descrição do post..." required></textarea>
 
                     <footer>
                         <div>
                             <label for="upload" class="file-upload" style="color: #FFFFFF;">Faça upload da sua imagem
                                 aqui...</label>
-                            <input type="file" id="upload" hidden>
+                            <input type="file" id="upload" name="Imagem" hidden>
                         </div>
+
                         <button type="submit" class="formulario-botao-postar">Postar</button>
                     </footer>
                 </form>
@@ -175,36 +192,62 @@
 
             <!-- Inicio card publi -->
             <section id="publicacoes">
-                <article class="card-publi">
-                    <header>
-                        <a href="#">
-                            <img class="foto-perfil" src="../images/davi.jpg" alt="Foto de perfil">
-                            daviizqk
-                        </a>
-                    </header>
+            @foreach (TbPublicacao publi in Model)
+            {
+                //Só irá exibir publicações que possuem imagens
+                if(!publi.ImagemUrl.IsNullOrEmpty())
+                {
+                    <!-- Inicio card publicação -->
+                    <article class="card-publi">
+                        <header>
+                            <a href="#">
+                                <img class="foto-perfil" src="../images/davi.jpg" alt="Foto de perfil">
+                                @publi.IdUsuarioNavigation?.NomeUsuario
+                            </a>
+                        </header>
 
-                    <figure>
-                        <img class="imagem-publi" src="../images/casio campeao.jpg" alt="">
-                        <div class="interacoes-publicacao">
-                            <button>
-                                <img src="../images/icone-coracao-preto.svg" alt="">
-                            </button>
-                            <button>
-                                <img src="../images/icone-comentario-preto.svg" alt="">
-                            </button>
+                        <figure>
+                            <img class="imagem-publi" src="../images/casio campeao.jpg" alt="">
+                            <div class="interacoes-publicacao">
+                                <button>
+                                    <img src="../images/icone-coracao-preto.svg" alt="">
+                                </button>
+                                <button>
+                                    <img src="../images/icone-comentario-preto.svg" alt="">
+                                </button>
 
-                            <span>100 curtidas</span>
+                                <span>100 curtidas</span>
+                            </div>
+                            <figcaption class="descricao-publicacao">
+                                @publi.IdUsuarioNavigation?.NomeUsuario
+                                <p>@publi.Descricao</p>
+                            </figcaption>
+
+                        </figure>
+
+                        <button type="button">Ver mais comentários...</button>
+
+                    </article>
+                    <!-- Fim card publicação -->
+                }
+                //Só irá exibir publicações que não possuem imagens
+                else
+                {
+                    <section id="publicacoes-perfil">
+                        <header>
+                            <a href="#">
+                                <img class="foto-perfil" src="../images/davi.jpg" alt="Foto de perfil">
+                                daviizqk
+                            </a>
+                        </header>
+                        <div class="card-notas">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt adipisci voluptatem debitis, voluptas incidunt quidem corrupti animi consectetur culpa consequatur possimus qui rerum unde, ipsam ut fuga enim omnis facilis?
                         </div>
-                        <figcaption class="descricao-publicacao">
-                            daviizqk
-                            <p>Campeão do mundo em 2012</p>
-                        </figcaption>
-
-                    </figure>
-
-                    <button type="button">Ver mais comentários...</button>
-
-                </article>
+                    </section>
+                }
+                
+            }
+                
             </section>
             <!-- Fim card publi -->
         </div>

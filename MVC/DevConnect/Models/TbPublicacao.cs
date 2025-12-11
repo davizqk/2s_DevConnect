@@ -18,10 +18,10 @@ public partial class TbPublicacao
 
     [Column("descricao")]
     [StringLength(300)]
-    public string? Descricao { get; set; }
+    public string Descricao { get; set; } = null!;
 
     [Column("imagem_url")]
-    [StringLength(200)]
+    [StringLength(255)]
     public string? ImagemUrl { get; set; }
 
     [Column("data_publicacao")]
