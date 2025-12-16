@@ -1,10 +1,11 @@
+@using Microsoft.Identity.Client
 @using Microsoft.IdentityModel.Tokens
+@model List<DevConnect.Models.TbPublicacao>
 
 @{
     ViewData["Title"] = "DevConnect - feed";
 }
 
-@model List<DevConnect.Models.TbPublicacao>
 
 <link rel="stylesheet" href="../css/feed.css">
 <link rel="stylesheet" href="../css/global.css">
@@ -14,12 +15,12 @@
 
     if(publicacaoNovaCadastrada == "Não cadastrado"){
         alert("Usuário não cadastrado! Tente novamente😔");
-    } else if(publicacaoNovaCadastrada == "Cadastrada"){
+    } 
+    else if(publicacaoNovaCadastrada == "Cadastrada"){
         alert("Muito bem! Sua nova publicação foi postada");
     }
 </script>
 
-<body>
     <h1>Tela Feed - DevConnect</h1>
     <!-- header -->
     <header id="cabecalho">
@@ -34,13 +35,14 @@
 
             <!-- Ícones -->
             <div class="acoes-cabecalho">
+                <a href="#">
+                    <img src="../images/coração.svg" alt="Ícone de coração na cor vermelha">
+                </a>
+                
                 <a asp-controller="Home" asp-action="Index">
                     <img src="../images/icone-casa-vermelho.svg" alt="Ícone de casa na cor vermelha">
                 </a>
 
-                <a href="#">
-                    <img src="../images/coração.svg" alt="Ícone de coração na cor vermelha">
-                </a>
 
                 <a asp-controller="Usuario" asp-action="Perfil">
                     <img class="foto-perfil" src="../images/davi.jpg" alt="Foto de perfil">
@@ -54,6 +56,8 @@
         <div class="container-flex-publi">
             <!-- Inicio story -->
             <section id="secao-storys">
+            @for (int i = 0; i < 6; i++)
+            {
                 <article class="card-story">
                     <a href="#">
                         <img class="foto-story" src="../images/casio campeao.jpg" alt="">
@@ -168,13 +172,14 @@
                         <p>romarinhooficial31</p>
                     </a>
                 </article>
+            }
             </section>
             <!-- Fim story -->
 
             <!-- Inicio seção story -->
             <section id="secao-publicacao">
                 <h2>Publicação</h2>
-                <form enctype="multipart/form-data" asp-controller="Feed" asp-action="Index">
+                <form enctype="multipart/form-data" asp-controller="Feed" asp-action="Index" method="post">
                     <textarea name="Descricao" placeholder="Digite a descrição do post..." required></textarea>
 
                     <footer>
@@ -192,36 +197,43 @@
 
             <!-- Inicio card publi -->
             <section id="publicacoes">
-            @foreach (TbPublicacao publi in Model)
+            @foreach (var publi in Model)
             {
                 //Só irá exibir publicações que possuem imagens
-                if(!publi.ImagemUrl.IsNullOrEmpty())
+                if(!string.IsNullOrEmpty(publi.ImagemUrl))
                 {
                     <!-- Inicio card publicação -->
                     <article class="card-publi">
                         <header>
-                            <a href="#">
-                                <img class="foto-perfil" src="../images/davi.jpg" alt="Foto de perfil">
+                            <a asp-controller="Usuario" asp-action="Perfil">
+                                <img    class="foto-perfil"
+                                        src="../images/@(publi.IdUsuarioNavigation?.FotoPerfilUrl ?? "davi.jpg")"
+                                        alt="Foto de perfil">
                                 @publi.IdUsuarioNavigation?.NomeUsuario
                             </a>
                         </header>
 
                         <figure>
-                            <img class="imagem-publi" src="../images/casio campeao.jpg" alt="">
-                            <div class="interacoes-publicacao">
-                                <button>
-                                    <img src="../images/icone-coracao-preto.svg" alt="">
-                                </button>
-                                <button>
-                                    <img src="../images/icone-comentario-preto.svg" alt="">
-                                </button>
+                            <img class="imagem-publi" 
+                                 src="../images/@publi.ImagemUrl" 
+                                 alt="Imagem da publicacao">
 
-                                <span>100 curtidas</span>
-                            </div>
                             <figcaption class="descricao-publicacao">
                                 @publi.IdUsuarioNavigation?.NomeUsuario
                                 <p>@publi.Descricao</p>
                             </figcaption>
+
+                            <div class="interacoes-publicacao">
+                                <button type="button">
+                                    <img src="../images/icone-coracao-preto.svg" alt="Curtir">
+                                </button>
+                                <button type="button">
+                                    <img src="../images/icone-comentario-preto.svg" alt="Comentar">
+                                </button>
+
+                                <span>100 curtidas</span>
+                            </div>
+                            
 
                         </figure>
 
@@ -231,20 +243,6 @@
                     <!-- Fim card publicação -->
                 }
                 //Só irá exibir publicações que não possuem imagens
-                else
-                {
-                    <section id="publicacoes-perfil">
-                        <header>
-                            <a href="#">
-                                <img class="foto-perfil" src="../images/davi.jpg" alt="Foto de perfil">
-                                daviizqk
-                            </a>
-                        </header>
-                        <div class="card-notas">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt adipisci voluptatem debitis, voluptas incidunt quidem corrupti animi consectetur culpa consequatur possimus qui rerum unde, ipsam ut fuga enim omnis facilis?
-                        </div>
-                    </section>
-                }
                 
             }
                 
@@ -252,4 +250,3 @@
             <!-- Fim card publi -->
         </div>
     </main>
-</body>

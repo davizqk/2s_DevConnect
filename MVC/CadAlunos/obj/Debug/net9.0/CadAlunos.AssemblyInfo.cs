@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CadAlunos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa35dca820193ffb6555d79a8ce6b21410ce72b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8527cb2aae3b13339f8759a3de07d166b2b7e471")]
 [assembly: System.Reflection.AssemblyProductAttribute("CadAlunos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CadAlunos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

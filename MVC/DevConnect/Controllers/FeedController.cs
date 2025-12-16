@@ -51,30 +51,30 @@ namespace DevConnect.Controllers
 
                 //Se não existir
                 if (!Directory.Exists(folder))
-                {
                     //Cria a pasta images
                     Directory.CreateDirectory(folder);
-                }
+                
 
                 var path = Path.Combine(folder, file.FileName);
 
                 using (var stream = new FileStream(path, FileMode.Create))
-                {
                     await file.CopyToAsync(stream);
-                }
+                
 
                 novoPost.ImagemUrl = file.FileName;
+            }
+            else
+            {
+                novoPost.ImagemUrl = null;
             }
             
             try
             {
                 _context.TbPublicacao.Add(novoPost);
-
                 await _context.SaveChangesAsync();
 
                 ViewBag.PublicacaoCadastrada = "Cadastrada";
-
-                return View();
+                return RedirectToAction("Index", "Feed");
             }
             catch (System.Exception)
             {
